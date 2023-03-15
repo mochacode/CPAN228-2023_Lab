@@ -1,4 +1,4 @@
-package com.cpan228.tekkenreborn.controller;
+package com.cpan228.Assignment2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

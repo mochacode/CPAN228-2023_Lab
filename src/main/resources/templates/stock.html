@@ -16,22 +16,22 @@
     <div
       class="d-flex flex-column bd-highlight justify-content-center align-items-center w-75 ms-5"
     >
-      <h1 class="mb-3">Design Tekken Reborn Fighter</h1>
-      <form method="post" th:object="${fighter}">
+      <h1 class="mb-3">Add Item</h1>
+      <form method="post" th:object="${item}">
         <div th:if="${#fields.hasErrors()}">
           <span> Please correct the problems below and resubmit. </span>
         </div>
         <div class="mb-3">
-          <label for="fighterName" class="form-label">Fighter name: </label>
+          <label for="itemName" class="form-label">Item name: </label>
           <input
             type="text"
             class="form-control"
-            id="fighterName"
+            id="itemName"
             th:field="*{name}"
-            aria-describedby="fighterHelp"
+            aria-describedby="itemHelp"
           />
-          <div id="fighterHelp" class="form-text">
-            Provide decent fighter name
+          <div id="itemHelp" class="form-text">
+            Provide decent item name
           </div>
           <span
             class="validationError"
@@ -89,17 +89,17 @@
           </span>
         </div>
         <!-- <select
-          th:field="*{animeFrom}"
+          th:field="*{brandFrom}"
           class="form-select mt-5 mb-5"
-          aria-label="Anime selection"
+          aria-label="Brand selection"
         >
           <option
-            th:each="anime: ${animes}"
-            th:value="${anime}"
-            th:text="${anime.title}"
+            th:each="brand: ${brands}"
+            th:value="${brand}"
+            th:text="${brand.title}"
           /> -->
         </select>
-        <button class="btn btn-primary mt-5"> Create Fighter </button>
+        <button class="btn btn-primary mt-5"> Create Item </button>
       </form>
     </div>
   </body>

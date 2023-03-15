@@ -1,9 +1,8 @@
-create table if not exists fighter (
+create table if not exists item (
   id identity,
   name varchar(50) not null,
-  damage_per_hit int not null,
-  health int not null,
-  resistance double not null,
-  anime_from varchar(50) not null,
+  year int not null,
+  price double not null,
+  brand_from varchar(50) not null,
    created_at timestamp not null
 );

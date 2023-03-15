@@ -10,11 +10,11 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cpan228</groupId>
-	<artifactId>tekkenreborn</artifactId>
+	<artifactId>Assignment2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tekkenreborn</name>
+	<name>assignment2</name>
 	<packaging>jar</packaging>
-	<description>Tekken reborn project with anime characters</description>
+	<description>Brand site with clothing items</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
